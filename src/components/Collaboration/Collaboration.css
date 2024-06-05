@@ -1,0 +1,27 @@
+.collaboration {
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.collaboration h2 {
+    color: #be2bbb;
+}
+
+.collaboration .discussion {
+    margin: 16px 0;
+    padding: 16px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.collaboration .discussion h3 {
+    margin-top: 0;
+}
+
+.collaboration .discussion p {
+    margin: 8px 0;
+}

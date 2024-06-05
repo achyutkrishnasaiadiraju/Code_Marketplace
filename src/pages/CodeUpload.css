@@ -1,0 +1,32 @@
+.code-upload-page {
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.code-upload-page form {
+    display: flex;
+    flex-direction: column;
+}
+
+.code-upload-page input, .code-upload-page textarea, .code-upload-page button {
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.code-upload-page button {
+    background-color: #be2bbb;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.code-upload-page button:hover {
+    background-color: #a02aa1;
+}

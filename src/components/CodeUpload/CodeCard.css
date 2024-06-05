@@ -1,0 +1,17 @@
+.code-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.code-card h3 {
+    margin-top: 0;
+    color: #be2bbb;
+}
+
+.code-card p {
+    margin: 8px 0;
+}
