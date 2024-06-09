@@ -5,6 +5,8 @@ import { CopyBlock, dracula } from "react-code-blocks";
 const CodeContributePage = () => {
   const { id } = useParams();
   const [codeDetails, setCodeDetails] = useState({});
+
+  // Logged In User
   const user = {
     id: "Achyut Krishna",
   };

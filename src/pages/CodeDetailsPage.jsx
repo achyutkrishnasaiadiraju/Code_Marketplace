@@ -175,7 +175,7 @@ plt.show()
 
       <div className="my-8 flex justify-between gap-4">
         <Link
-          to={"#"}
+          to={"contribute"}
           className="w-1/3 rounded border-2 border-primary p-2 text-center shadow hover:bg-primary hover:text-white"
         >
           Contribute
