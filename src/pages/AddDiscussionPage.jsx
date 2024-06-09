@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { codingLanguages } from "../utils/constants";
 
-const CodeUploadPage = () => {
+const AddDiscussionPage = () => {
   const [selectedLanguage, setSelectedLanguage] = useState("");
 
   const handleChange = (event) => {
@@ -15,13 +15,13 @@ const CodeUploadPage = () => {
 
   return (
     <div className="mx-auto mt-4 min-h-96 rounded-lg p-4 shadow-lg lg:max-w-[64rem]">
-      <h1 className="my-4 text-center text-4xl font-medium">Add Code</h1>
+      <h1 className="my-4 text-center text-4xl font-medium">Add Discussion</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-4 flex items-start justify-end">
           <span className="w-1/4 px-4 text-lg font-medium">Title:</span>
           <input
             type="text"
-            placeholder="Code Title"
+            placeholder="Discussion Title"
             className="w-3/4 rounded-lg border-2 border-secondary px-4 py-2"
             required
           />
@@ -30,7 +30,7 @@ const CodeUploadPage = () => {
         <div className="mb-4 flex items-start justify-end">
           <span className="w-1/4 px-4 text-lg font-medium">Description:</span>
           <textarea
-            placeholder="Code Description"
+            placeholder="Discussion Description"
             className="w-3/4 rounded-lg border-2 border-secondary px-4 py-2"
             required
           />
@@ -54,38 +54,15 @@ const CodeUploadPage = () => {
 
         <div className="mb-4 flex items-start justify-end">
           <div className="w-1/4 px-4">
-            <span className="text-lg font-medium">Dependencies:</span>
-            <p className="text-sm text-lightText">(Comma Separated)</p>
-          </div>
-          <input
-            type="text"
-            placeholder="Code Dependencies (Comma Separated)"
-            className="w-3/4 rounded-lg border-2 border-secondary px-4 py-2"
-            required
-          />
-        </div>
-
-        <div className="mb-4 flex items-start justify-end">
-          <span className="w-1/4 px-4 text-lg font-medium">Code:</span>
-          <textarea
-            placeholder="Code"
-            className="w-3/4 rounded-lg border-2 border-secondary px-4 py-2"
-            required
-          />
-        </div>
-
-        <div className="mb-4 flex items-start justify-end">
-          <div className="w-1/4 px-4">
             <span className="text-lg font-medium">Tags:</span>
             <p className="text-sm text-lightText">(Comma Separated)</p>
           </div>
           <input
-            placeholder="Code Tags (Comma Separated)"
+            placeholder="Discussion Tags (Comma Separated)"
             className="w-3/4 rounded-lg border-2 border-secondary px-4 py-2"
             required
           />
         </div>
-
         <div className="flex justify-end">
           <button
             type="submit"
@@ -99,4 +76,4 @@ const CodeUploadPage = () => {
   );
 };
 
-export default CodeUploadPage;
+export default AddDiscussionPage;

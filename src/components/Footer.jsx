@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
-	return (
-		<footer className='bg-background text-center py-4 fixed font-semibold bottom-0 w-full shadow-inner border-t border-border'>
-			<p className='text-lightText text-sm'>
-				&copy; 2024 Bristol Myers Squibb&#174;. All rights reserved.
-			</p>
-		</footer>
-	)
-}
+  return (
+    <footer className="fixed bottom-0 w-full border-t border-border bg-background py-4 text-center font-semibold shadow-inner">
+      <p className="text-sm text-lightText">
+        &copy; 2024 Bristol Myers Squibb&#174;. All rights reserved.
+      </p>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;
