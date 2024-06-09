@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const NotFoundPage = () => {
   const navigate = useNavigate();
@@ -54,9 +54,12 @@ const NotFoundPage = () => {
               <span>Go back</span>
             </button>
 
-            <button className="w-1/2 shrink-0 rounded-lg bg-blue-500 px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 hover:bg-blue-600 sm:w-auto">
+            <Link
+              to={"/"}
+              className="w-1/2 shrink-0 rounded-lg bg-primary px-5 py-2 text-sm tracking-wide text-white transition-colors duration-200 hover:bg-primary-dark sm:w-auto"
+            >
               Take me home
-            </button>
+            </Link>
           </div>
         </div>
       </div>

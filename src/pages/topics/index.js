@@ -1,4 +1,5 @@
-import TopicsPageLayout from './TopicsPageLayout'
-import TopicsPage from './TopicsPage'
+import TopicsPageLayout from "./TopicsPageLayout";
+import TopicsPage from "./TopicsPage";
+import TopicsCodeDetailsPage from "./TopicsCodeDetailsPage";
 
-export { TopicsPageLayout, TopicsPage }
+export { TopicsPageLayout, TopicsPage, TopicsCodeDetailsPage };
