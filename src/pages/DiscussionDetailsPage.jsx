@@ -29,6 +29,12 @@ const DiscussionDetailsPage = () => {
         },
         {
           id: 3,
+          author: "Achyut Krishna",
+          content:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, sapiente.",
+        },
+        {
+          id: 4,
           author: "John Doe",
           content: "Lorem ipsum dolor sit amet",
         },
@@ -93,17 +99,21 @@ const DiscussionDetailsPage = () => {
         </div>
       </form>
 
-      <div className="my-2">
+      <div className="my-2 shadow-lg">
         <span className="block text-lg font-medium">Comments: </span>
-        <div className="my-2 flex flex-col gap-2">
+        <div className="my-2 flex max-h-72 flex-col gap-2 overflow-scroll p-4">
           {codeDetails.comments &&
             codeDetails.comments.map((comment) => (
               <div
-                className="rounded border-2 border-border px-4 py-2 shadow shadow-lg"
-                key={comment.id}
+                className={`flex ${comment.author === codeDetails.author ? "justify-end" : "justify-start"}`}
               >
-                <h2 className="font-medium">{comment.author}</h2>
-                <p className="text-justify">{comment.content}</p>
+                <div
+                  className="w-3/4 rounded border-2 border-border px-4 py-2 shadow shadow-lg"
+                  key={comment.id}
+                >
+                  <h2 className="font-medium">{comment.author}</h2>
+                  <p className="text-justify">{comment.content}</p>
+                </div>
               </div>
             ))}
         </div>

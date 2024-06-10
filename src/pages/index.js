@@ -7,6 +7,7 @@ import CodeUploadPage from "./CodeUploadPage";
 import DocumentationPage from "./DocumentationPage";
 import NotFoundPage from "./NotFoundPage";
 import AddDiscussionPage from "./AddDiscussionPage";
+import DiscussionsPage from "./DiscussionsPage";
 import DiscussionDetailsPage from "./DiscussionDetailsPage";
 
 export {
@@ -20,4 +21,5 @@ export {
   NotFoundPage,
   AddDiscussionPage,
   DiscussionDetailsPage,
+  DiscussionsPage,
 };

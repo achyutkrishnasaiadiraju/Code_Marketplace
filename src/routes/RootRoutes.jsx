@@ -11,6 +11,7 @@ import {
   NotFoundPage,
   AddDiscussionPage,
   DiscussionDetailsPage,
+  DiscussionsPage,
 } from "../pages";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -29,7 +30,8 @@ const RootRoutes = () => {
         <Route path="/codes" element={<CodeUploadPage />} />
         <Route path="/codes/:id" element={<CodeDetailsPage />} />
         <Route path="/codes/:id/contribute" element={<CodeContributePage />} />
-        <Route path="/discussions" element={<AddDiscussionPage />} />
+        <Route path="/discussions" element={<DiscussionsPage />} />
+        <Route path="/discussions/add" element={<AddDiscussionPage />} />
         <Route path="/discussions/:id" element={<DiscussionDetailsPage />} />
         <Route path="/upload" element={<CodeUploadPage />} />
         <Route path="/login" element={<LoginPage />} />

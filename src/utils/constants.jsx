@@ -13,8 +13,8 @@ export const navbarMenus = [
     label: "Topics",
   },
   {
-    href: "/profile",
-    label: "Profile",
+    href: "/discussions",
+    label: "Discussions",
   },
 ];
 
