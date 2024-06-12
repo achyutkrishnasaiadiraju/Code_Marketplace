@@ -5,38 +5,38 @@ const DiscussionDetailsPage = () => {
   const { id } = useParams();
   const [codeDetails, setCodeDetails] = useState({});
   const user = {
-    id: "Achyut Krishna1",
+    id: "Achuth Praneeth",
   };
 
   useEffect(() => {
     setCodeDetails({
       id: 1,
-      title: "Code Title",
+      title: "Optimizing Machine Learning Models",
       author: "Achyut Krishna",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et deleniti quam saepe vel iusto quasi illum quia necessitatibus, debitis dolorum.",
+        "In this discussion, we explore various techniques and best practices for optimizing machine learning models. Topics include hyperparameter tuning, model selection, feature engineering, and using ensemble methods to improve model performance.",
       comments: [
         {
           id: 1,
-          author: "Anand Adiraju",
-          content: "Lorem ipsum dolor sit amet consectetur adipisicing",
+          author: "Achyut Krishna Sai Adiraju",
+          content: "Great insights on hyperparameter tuning! I found the grid search vs. random search comparison very helpful.",
         },
         {
           id: 2,
-          author: "Shubham Sareliya",
+          author: "Achuth Praneeth",
           content:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, sapiente.",
+            "Thanks for the detailed explanation on feature engineering. Can you provide more examples on how to handle categorical variables?",
         },
         {
           id: 3,
-          author: "Achyut Krishna",
+          author: "Harika Vemulapalli",
           content:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, sapiente.",
+            "I'm glad you found the discussion useful, Anand. Shubham, I'll definitely add more examples on handling categorical variables soon!",
         },
         {
           id: 4,
-          author: "John Doe",
-          content: "Lorem ipsum dolor sit amet",
+          author: "Kiran Nanduri",
+          content: "The section on ensemble methods was enlightening. Can you discuss more about stacking and blending?",
         },
       ],
     });
@@ -101,21 +101,40 @@ const DiscussionDetailsPage = () => {
 
       <div className="my-2 shadow-lg">
         <span className="block text-lg font-medium">Comments: </span>
-        <div className="my-2 flex max-h-72 flex-col gap-2 overflow-scroll p-4">
+        {/* <div className="my-2 flex max-h-72 flex-col gap-2 overflow-scroll p-4  rounded">
           {codeDetails.comments &&
             codeDetails.comments.map((comment) => (
               <div
                 className={`flex ${comment.author === codeDetails.author ? "justify-end" : "justify-start"}`}
               >
                 <div
-                  className="w-3/4 rounded border-2 border-border px-4 py-2 shadow shadow-lg"
+                  className="w-3/4 rounded border-2 border-border px-4 py-2 shadow shadow-lg bg-gray-200"
                   key={comment.id}
                 >
-                  <h2 className="font-medium">{comment.author}</h2>
-                  <p className="text-justify">{comment.content}</p>
+                  <h2 className="font-medium underline ">{comment.author}</h2>
+                  <p className="text-justify ">{comment.content}</p>
                 </div>
               </div>
             ))}
+        </div> */}
+        <div className="my-2 shadow-lg">
+          <span className="block text-lg font-medium">Comments: </span>
+          <div className="my-2 flex max-h-72 flex-col gap-2 overflow-scroll p-4  rounded">
+            {codeDetails.comments &&
+              codeDetails.comments.map((comment) => (
+                <div
+                  className={`flex ${comment.author === codeDetails.author ? "justify-end" : comment.author === "Achuth Praneeth" ? "justify-end" : "justify-start"}`}
+                >
+                  <div
+                    className="w-3/4 rounded border-2 border-border px-4 py-2 shadow shadow-lg bg-gray-200"
+                    key={comment.id}
+                  >
+                    <h2 className="font-medium underline ">{comment.author}</h2>
+                    <p className="text-justify ">{comment.content}</p>
+                  </div>
+                </div>
+              ))}
+          </div>
         </div>
       </div>
     </div>

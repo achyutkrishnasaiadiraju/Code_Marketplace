@@ -6,19 +6,44 @@ import _ from "lodash";
 const ProfileFollowersPage = () => {
   const [followers, setFollowers] = useState([
     {
-      id: 1,
-      name: "Achyut Krishna Sai Adiraju",
-      username: "adirajua",
+      id: 2,
+      name: "Tarun Viat",
+      username: "tarunvait",
     },
     {
-      id: 2,
+      id: 3,
+      name: "Kumar Choudhary Nishant",
+      username: "NishantKumarChoudhary",
+    },
+    {
+      id: 4,
+      name: "Nethi Rajesh",
+      username: "rajeshnethi",
+    },
+    {
+      id: 5,
       name: "Shubham Sareliya",
       username: "sareliyas",
     },
     {
-      id: 3,
-      name: "Anand Adiraju",
-      username: "adirajua2",
+      id: 6,
+      name: "Anand Sai Adiraju",
+      username: "anandsaiadiraju",
+    },
+    {
+      id: 7,
+      name: "Harika Vemulapalli",
+      username: "harikavemulapalli",
+    },
+    {
+      id: 8,
+      name: "Kiran Nanduri",
+      username: "kirannanduri",
+    },
+    {
+      id: 9,
+      name: "Viswanadham, Bruhathi",
+      username: "bruhathiviswanadham",
     },
   ]);
   const [query, setQuery] = useState("");

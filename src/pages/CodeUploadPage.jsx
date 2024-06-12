@@ -14,7 +14,7 @@ const CodeUploadPage = () => {
   };
 
   return (
-    <div className="mx-auto mt-4 min-h-96 rounded-lg p-4 shadow-lg lg:max-w-[64rem]">
+    <div className="mx-auto mb-16 mt-4 min-h-96 rounded-lg p-4 shadow-lg lg:max-w-[64rem]">
       <h1 className="my-4 text-center text-4xl font-medium">Add Code</h1>
       <form onSubmit={handleSubmit}>
         <div className="mb-4 flex items-start justify-end">

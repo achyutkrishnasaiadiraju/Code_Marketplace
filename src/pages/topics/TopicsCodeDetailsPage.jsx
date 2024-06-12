@@ -6,39 +6,39 @@ import { IoSearch } from "react-icons/io5";
 const TopicsCodeDetailsPage = () => {
   const { id } = useParams();
 
-  const topic = "Machine Learning";
+  const topic = "Cloud Computing";
 
   const [query, setQuery] = useState("");
   const [codes, setCodes] = useState([
     {
       id: 1,
-      title: "Code Title",
+      title: "Cloud Computing: An Introduction",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla ipsam natus officia doloribus repudiandae.",
+        "This discussion provides a foundational overview of cloud computing, covering its basic concepts, service models (IaaS, PaaS, SaaS), and deployment models (public, private, hybrid, and multi-cloud). Learn about the advantages and challenges of adopting cloud technologies and explore real-world examples of cloud implementations across various industries.",
     },
     {
       id: 2,
-      title: "Code Title",
+      title: "Securing Your Cloud Infrastructure",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla ipsam natus officia doloribus repudiandae.",
+        "Join us to delve into the best practices for securing cloud infrastructure. This discussion will cover topics such as identity and access management (IAM), data encryption, network security, compliance standards, and the shared responsibility model. Understand the tools and techniques to safeguard your cloud environment against potential threats and vulnerabilities.",
     },
     {
       id: 3,
-      title: "Code Title",
+      title: "Cost Optimization Strategies in Cloud Computing",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla iLorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla iLorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla iLorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla iLorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla iLorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla iLorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla iLorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla iLorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla iLorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla ipsam natus officia doloribus repudiandae.",
-    },
+        "In this in-depth discussion, we explore a variety of strategies to optimize costs in cloud computing environments. We'll start by examining the different pricing models offered by major cloud providers, including pay-as-you-go, reserved instances, and spot instances, to help you choose the most cost-effective options for your workloads. Next, we'll delve into the benefits of leveraging reserved instances for long-term savings and how to effectively manage and implement auto-scaling to ensure that you are only using resources when needed. You'll learn about best practices for monitoring and managing resource usage to prevent over-provisioning and reduce waste. We'll also cover the utilization of advanced cost management tools and dashboards provided by cloud service providers such as AWS Cost Explorer, Azure Cost Management, and Google Cloud's cost tools. These tools can provide valuable insights into your cloud spending and help you identify areas for potential savings. Additionally, the discussion will highlight real-world case studies and examples where organizations have successfully implemented cost optimization strategies, demonstrating the tangible benefits and savings achieved. By the end of this session, you'll have a comprehensive understanding of how to maximize the value of your cloud investments, make informed decisions about resource allocation, and implement effective cost-saving measures to minimize expenses while maintaining performance and scalability.",
+    },    
     {
       id: 4,
-      title: "Code Title",
+      title: "Deploying a Scalable Web Application on AWS",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla ipsam natus officia doloribus repudiandae.",
+        "Learn how to deploy a scalable web application on AWS using services like Amazon EC2, Amazon RDS, Amazon S3, and Amazon CloudFront. This example will walk you through the process of setting up a virtual server, configuring a relational database, storing static assets in the cloud, and distributing content globally for low-latency access.",
     },
     {
       id: 5,
-      title: "Code Title",
+      title: "Serverless Computing with AWS Lambda",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla ipsam natus officia doloribus repudiandae.",
+        "Discover the power of serverless computing with AWS Lambda. This example will show you how to create and deploy serverless functions that automatically scale in response to demand, without the need to provision or manage servers. Learn how to trigger functions in response to events, integrate with other AWS services, and pay only for the compute time you consume.",
     },
   ]);
 

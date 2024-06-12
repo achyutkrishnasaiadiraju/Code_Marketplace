@@ -8,14 +8,14 @@ const CodeDetailsPage = () => {
   useEffect(() => {
     setCodeDetails({
       id: 1,
-      title: "Code Title",
+      title: "Data Analysis and Visualization",
       version: 2,
       author: "Achyut Krishna",
       language: "python",
-      dependencies: "Python 3.8, Pandas, NumPy",
+      dependencies: "Python 3.8, Pandas, NumPy, Matplotlib",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur officia saepe vero explicabo vel repudiandae omnis vitae quos accusantium.",
-      tags: ["python", "Machine Learning", "NumPy", "Pandas"],
+        "This code snippet demonstrates basic data analysis and visualization using Pandas, NumPy, and Matplotlib. It includes data generation, DataFrame manipulation, statistical computations, and plotting.",
+      tags: ["Python", "Data Analysis", "NumPy", "Pandas", "Matplotlib"],
       code: `import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -25,8 +25,6 @@ np.random.seed(0)
 data = {
     'A': np.random.randn(100),
     'B': np.random.randn(100) * 5,
-    'C': np.random.randn(100) + 3,
-    'D': np.random.randint(1, 100, 100)
 }
 
 # Create a DataFrame
@@ -49,8 +47,6 @@ print("\nStandard deviation values:\n", std_values)
 # Plot the data
 plt.figure(figsize=(10, 6))
 plt.plot(df['A'], label='A')
-plt.plot(df['B'], label='B')
-plt.plot(df['C'], label='C')
 plt.plot(df['E'], label='E', linestyle='--')
 plt.legend()
 plt.title('Random Data Plot')
@@ -61,25 +57,25 @@ plt.show()
       comments: [
         {
           id: 1,
-          author: "Anand Adiraju",
-          content: "Lorem ipsum dolor sit amet consectetur adipisicing",
+          author: "Achyut Krishna Sai Adiraju",
+          content: "Great example of using Pandas for data manipulation!",
         },
         {
           id: 2,
-          author: "Shubham Sareliya",
+          author: "Achuth Praneeth",
           content:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, sapiente.",
+            "Very helpful for understanding basic data analysis in Python.",
         },
         {
           id: 2,
-          author: "Achyut Krishna",
+          author: "Tarun Viat",
           content:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, sapiente.",
+            "I'm glad you found it useful! Any suggestions for improvement?",
         },
         {
           id: 3,
-          author: "John Doe",
-          content: "Lorem ipsum dolor sit amet",
+          author: "Rajesh Nethi",
+          content: "Nice code! Can you add more visualization examples?",
         },
       ],
     });
@@ -169,12 +165,10 @@ plt.show()
           {codeDetails.comments &&
             codeDetails.comments.map((comment) => (
               <div
-                className={`flex ${comment.author === codeDetails.author ? "justify-end" : "justify-start"}`}
+                className={`flex ${comment.author === "Tarun Viat" ? "justify-end" : "justify-start"}`}
+                key={comment.id}
               >
-                <div
-                  className="w-3/4 rounded border-2 border-border px-4 py-2 shadow shadow-lg"
-                  key={comment.id}
-                >
+                <div className="w-3/4 rounded border-2 border-border px-4 py-2 shadow shadow-lg">
                   <h2 className="font-medium">{comment.author}</h2>
                   <p className="text-justify">{comment.content}</p>
                 </div>

@@ -5,18 +5,46 @@ import _ from "lodash";
 
 const ProfileFollowingTopicPage = () => {
   const [followingTopics, setFollowingTopics] = useState([
-    {
-      id: 1,
-      name: "Machine Learning",
-    },
-    {
-      id: 2,
-      name: "Cyber Security",
-    },
-    {
-      id: 3,
-      name: "Software Development",
-    },
+      {
+        id: 1,
+        name: "Machine Learning",
+      },
+      {
+        id: 2,
+        name: "Cyber Security",
+      },
+      {
+        id: 3,
+        name: "Software Development",
+      },
+      {
+        id: 4,
+        name: "Cloud Computing",
+      },
+      {
+        id: 5,
+        name: "Data Science",
+      },
+      {
+        id: 6,
+        name: "Artificial Intelligence",
+      },
+      {
+        id: 7,
+        name: "Web Development",
+      },
+      {
+        id: 8,
+        name: "Mobile App Development",
+      },
+      {
+        id: 9,
+        name: "Internet of Things (IoT)",
+      },
+      {
+        id: 10,
+        name: "Blockchain Technology",
+      },
   ]);
   const [query, setQuery] = useState("");
   const [filteredFollowingTopic, setFilteredFollowingTopics] =

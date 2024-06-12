@@ -7,15 +7,39 @@ const ProfileSubscribedCodePage = () => {
   const [subscribedCodes, setSubscribedCodes] = useState([
     {
       id: 1,
-      name: "Code 1",
+      name: "Node.js Express REST API",
     },
     {
       id: 2,
-      name: "Code 2",
+      name: "React Native Chat Application",
     },
     {
-      id: 3,
-      name: "Code 3",
+      id: 4,
+      name: "RESTful API Implementation in Node.js",
+    },
+    {
+      id: 5,
+      name: "React Native Mobile App",
+    },
+    {
+      id: 6,
+      name: "Python Web Scraping Script",
+    },
+    {
+      id: 7,
+      name: "Java Spring Boot REST API",
+    },
+    {
+      id: 8,
+      name: "Angular Frontend Application",
+    },
+    {
+      id: 9,
+      name: "Dockerized Flask Application",
+    },
+    {
+      id: 10,
+      name: "GraphQL Server with Apollo",
     },
   ]);
   const [query, setQuery] = useState("");
