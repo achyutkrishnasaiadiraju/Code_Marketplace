@@ -8,33 +8,63 @@ const TopicsPage = () => {
   const [topics, setTopics] = useState([
     {
       id: 1,
-      name: "Topic Name",
+      name: "Advancements in Quantum Computing",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla ipsam natus officia doloribus repudiandae.",
+        "Explore the latest advancements in quantum computing. Discuss how quantum computers work, current research, and their potential applications in various fields such as cryptography, materials science, and artificial intelligence.",
     },
     {
       id: 2,
-      name: "Topic Name",
+      name: "Blockchain Technology and Cryptocurrency",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla ipsam natus officia doloribus repudiandae.",
+        "Dive into the world of blockchain technology and cryptocurrency. Learn about the fundamentals of blockchain, its applications beyond cryptocurrency, and the future of digital currencies like Bitcoin and Ethereum.",
     },
     {
       id: 3,
-      name: "Topic Name",
+      name: "The Future of Artificial Intelligence",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla ipsam natus officia doloribus repudiandae.",
+        "Discuss the future of artificial intelligence and its impact on various industries. Topics include advancements in machine learning, AI ethics, and the potential for AI to transform healthcare, finance, and more.",
     },
     {
       id: 4,
-      name: "Topic Name",
+      name: "Building Scalable Web Applications",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla ipsam natus officia doloribus repudiandae.",
+        "Learn the best practices for building scalable web applications. Topics include choosing the right architecture, using cloud services, optimizing performance, and managing databases effectively.",
     },
     {
       id: 5,
-      name: "Topic Name",
+      name: "Internet of Things (IoT) Innovations",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis aperiam ratione fugiat odit. Vitae, nulla ipsam natus officia doloribus repudiandae.",
+        "Explore the latest innovations in the Internet of Things (IoT). Discuss the impact of IoT on smart homes, healthcare, industrial automation, and the challenges of security and data privacy.",
+    },
+    {
+      id: 6,
+      name: "Cybersecurity Threats and Solutions",
+      content:
+        "Discuss the latest cybersecurity threats and solutions. Learn about common attack vectors, best practices for protecting systems and data, and the role of AI and machine learning in cybersecurity.",
+    },
+    {
+      id: 7,
+      name: "Data Science and Big Data Analytics",
+      content:
+        "Explore the field of data science and big data analytics. Topics include data collection, processing, and analysis techniques, as well as real-world applications in business, healthcare, and more.",
+    },
+    {
+      id: 8,
+      name: "Advances in Renewable Energy Technology",
+      content:
+        "Discuss the advances in renewable energy technology. Learn about the latest developments in solar, wind, and hydro power, as well as the potential for new technologies like hydrogen fuel cells.",
+    },
+    {
+      id: 9,
+      name: "Augmented Reality (AR) and Virtual Reality (VR)",
+      content:
+        "Explore the applications and future of augmented reality (AR) and virtual reality (VR). Discuss their impact on gaming, education, healthcare, and other industries.",
+    },
+    {
+      id: 10,
+      name: "Ethical Implications of Biotechnology",
+      content:
+        "Discuss the ethical implications of biotechnology advancements. Topics include genetic engineering, CRISPR, stem cell research, and the potential benefits and risks of these technologies.",
     },
   ]);
 

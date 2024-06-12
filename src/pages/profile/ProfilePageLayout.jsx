@@ -24,7 +24,7 @@ const ProfilePageLayout = () => {
 					<div className='flex flex-col items-center mt-6 -mx-2'>
 						<img
 							className='object-cover w-36 h-36 mx-2 rounded-full'
-							src='https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80'
+							src='https://media.licdn.com/dms/image/D4D03AQHiU_xsD9Bt6Q/profile-displayphoto-shrink_200_200/0/1690102401485?e=2147483647&v=beta&t=0pAxZvRVyOlkak4a2XjQUFwdhcstO_oW9sUn8YUgsHE'
 							alt='avatar'
 						/>
 						<h4 className='mx-2 mt-2 font-medium text-gray-800 text-center'>

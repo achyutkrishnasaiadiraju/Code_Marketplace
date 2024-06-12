@@ -5,18 +5,63 @@ import { IoMdClose, IoMdSearch } from "react-icons/io";
 import { FaBars } from "react-icons/fa6";
 import { MdOutlineNotifications } from "react-icons/md";
 import { navbarMenus } from "../utils/constants";
-
+ 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(true);
-
+  const [isNotificationDropdownOpen, setIsNotificationDropdownOpen] =
+    useState(false);
+ 
+  const notifications = [
+    {
+      id: 1,
+      title: "React State Management",
+      category: "topics",
+      type: "New Topic",
+    },
+    {
+      id: 2,
+      title: "Best Practices for Code Reviews",
+      category: "discussions",
+      type: "New Discussion",
+    },
+    {
+      id: 3,
+      title: "JWT Authentication in Node.js",
+      category: "codes",
+      type: "New Code Snippet",
+    },
+    {
+      id: 4,
+      title: "New Follower: Shubham Sareliya",
+      category: "followers",
+      type: "New Follower",
+    },
+    {
+      id: 5,
+      title: "GraphQL API with Apollo Server",
+      category: "codes",
+      type: "New Code Snippet",
+    },
+    {
+      id: 6,
+      title: "New Follower: Shubham Sareliya",
+      category: "followers",
+      type: "New Follower",
+    },
+  ];
+ 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
+ 
+  const toggleNotificationDropdown = () => {
+    setIsNotificationDropdownOpen(!isNotificationDropdownOpen);
+  };
+ 
   return (
-    <nav x-data="{ isOpen: false }" className="relative bg-white shadow-lg">
+    <nav className="relative bg-white shadow-lg">
       <div className="container mx-auto px-6 py-4">
         <div className="lg:flex lg:items-center lg:justify-between">
           <div className="flex items-center justify-between">
@@ -36,7 +81,7 @@ const Header = () => {
                 </Link>
               ))}
             </Link>
-
+ 
             {/* Mobile menu button */}
             <div className="flex lg:hidden">
               <button
@@ -49,7 +94,7 @@ const Header = () => {
               </button>
             </div>
           </div>
-
+ 
           <div
             className={`${
               isOpen
@@ -63,7 +108,7 @@ const Header = () => {
                   <span className="absolute inset-y-0 left-0 flex items-center pl-3">
                     <IoMdSearch />
                   </span>
-
+ 
                   <input
                     type="text"
                     className="w-full rounded-md border bg-background py-2 pl-10 pr-4 text-secondary focus:border-primary-dark focus:outline-none focus:ring focus:ring-primary focus:ring-opacity-40"
@@ -72,15 +117,35 @@ const Header = () => {
                 </div>
               </div>
             </div>
-
-            <div className="mt-4 flex items-center lg:mt-0">
-              <button
-                className="mx-4 hidden transform text-secondary transition-colors duration-300 hover:text-secondary focus:text-secondary focus:outline-none lg:block"
-                aria-label="show notifications"
-              >
-                <MdOutlineNotifications size={24} />
-              </button>
-
+ 
+            <div className="relative mt-4 flex items-center lg:mt-0">
+              <div className="relative">
+                <button
+                  className="mx-4 hidden transform text-secondary transition-colors duration-300 hover:text-secondary focus:text-secondary focus:outline-none lg:block"
+                  aria-label="show notifications"
+                  onClick={toggleNotificationDropdown}
+                >
+                  <MdOutlineNotifications size={24} />
+                </button>
+                {isNotificationDropdownOpen && (
+                  <div className="absolute right-0 mt-2 w-96 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+                    <div className="py-1">
+                      {notifications.map((notification) => (
+                        <Link
+                          key={notification.id}
+                          to={`${notification.category === "followers" ? "/profile/followers" : `${notification.category}/${notification.id}`}`}
+                          className="block px-4 py-2 text-justify text-sm text-gray-700 hover:bg-gray-100"
+                        >
+                          <span className="font-bold">{notification.type}</span>
+                          {": "}
+                          {notification.title}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+ 
               <button
                 type="button"
                 className="flex items-center focus:outline-none"
@@ -95,7 +160,7 @@ const Header = () => {
                     />
                   </div>
                 </Link>
-
+ 
                 <h3 className="mx-2 text-secondary lg:hidden">
                   Achyut Krishna Sai Adiraju
                 </h3>

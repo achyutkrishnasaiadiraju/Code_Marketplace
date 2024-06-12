@@ -5,21 +5,71 @@ import _ from "lodash";
 
 const ProfileFollowingPage = () => {
   const [followings, setFollowings] = useState([
-    {
-      id: 1,
-      name: "Achyut Krishna Sai Adiraju",
-      username: "adirajua",
-    },
-    {
-      id: 2,
-      name: "Shubham Sareliya",
-      username: "sareliyas",
-    },
-    {
-      id: 3,
-      name: "Anand Adiraju",
-      username: "adirajua2",
-    },
+      {
+        id: 3,
+        name: "Kumar Choudhary Nishant",
+        username: "NishantKumarChoudhary",
+      },
+      {
+        id: 7,
+        name: "Harika Vemulapalli",
+        username: "harikavemulapalli",
+      },
+      {
+        id: 8,
+        name: "Kiran Nanduri",
+        username: "kirannanduri",
+      },
+      {
+        id: 6,
+        name: "Anand Sai Adiraju",
+        username: "anandsaiadiraju",
+      },
+      {
+        id: 2,
+        name: "Tarun Viat",
+        username: "tarunvait",
+      },
+      {
+        id: 4,
+        name: "Nethi Rajesh",
+        username: "rajeshnethi",
+      },
+      {
+        id: 9,
+        name: "Viswanadham, Bruhathi",
+        username: "bruhathiviswanadham",
+      },
+      {
+        id: 10,
+        name: "Sneha Reddy",
+        username: "snehareddy",
+      },
+      {
+        id: 11,
+        name: "Rohit Kumar",
+        username: "rohitkumar",
+      },
+      {
+        id: 12,
+        name: "Divya Patel",
+        username: "divyapatel",
+      },
+      {
+        id: 13,
+        name: "Rakesh Singh",
+        username: "rakeshsingh",
+      },
+      {
+        id: 14,
+        name: "Priya Sharma",
+        username: "priyasharma",
+      },
+      {
+        id: 15,
+        name: "Manish Gupta",
+        username: "manishgupta",
+      },      
   ]);
   const [query, setQuery] = useState("");
   const [filteredFollowings, setFilteredFollowings] = useState(followings);
